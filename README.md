@@ -1,6 +1,6 @@
 # execitu
 
-## Install
+## Installation
 ```
 go get -u github.com/theoden9014/exercitu
 ```
