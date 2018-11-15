@@ -42,7 +42,7 @@ Use "exercitu [command] --help" for more information about a command.
 
 ## Contribution
 1. Fork it
-2. Download your fork to your PC (git clone https://github.com/your_username/exercitu && cd cobra)
+2. Download your fork to your PC (git clone https://github.com/your_username/exercitu && cd exercitu)
 3. Create your feature branch (git checkout -b my-new-feature)
 4. Make changes and add them (git add .)
 5. Commit your changes (git commit -m 'Add some feature')
