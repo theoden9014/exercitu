@@ -1,4 +1,4 @@
-package utils
+package rand
 
 import (
 	"math/rand"
@@ -13,13 +13,13 @@ var (
 	letterRunes = []rune("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ")
 )
 
-func GenerateRandInt(data []int) {
+func GenerateInt(data []int) {
 	for i := range data {
 		data[i] = rand.Intn(10)
 	}
 }
 
-func GenerateRandString(data []string) {
+func GenerateString(data []string) {
 	for i := range data {
 		data[i] = string(letterRunes[rand.Intn(len(letterRunes))])
 	}

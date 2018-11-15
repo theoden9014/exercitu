@@ -12,7 +12,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/theoden9014/exercitu/utils"
+	"github.com/theoden9014/exercitu/pkg/rand"
 )
 
 const (
@@ -75,7 +75,7 @@ func (h HTTP) Try(ctx context.Context) error {
 
 func (h *HTTP) Run(ctx context.Context) (*Result, error) {
 	str := make([]string, 10)
-	utils.GenerateRandString(str)
+	rand.GenerateString(str)
 	urlPath := strings.Join(str, "")
 	getUrl := joinUrl(h.url.String(), urlPath)
 

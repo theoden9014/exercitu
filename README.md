@@ -2,7 +2,7 @@
 
 ## Installation
 ```
-go get -u github.com/theoden9014/exercitu
+go get -u github.com/theoden9014/exercitu/...
 ```
 
 ## Usage
