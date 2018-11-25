@@ -77,7 +77,7 @@ func (h *HTTP) Run(ctx context.Context) (*Result, error) {
 	str := make([]string, 10)
 	rand.GenerateString(str)
 	urlPath := strings.Join(str, "")
-	getUrl := joinUrl(h.url.String(), urlPath)
+	getUrl := joinURL(h.url.String(), urlPath)
 
 	// h.log.Debugf("Get %s", getUrl)
 	req, err := h.newRequest(ctx, "GET", getUrl, nil)
@@ -114,7 +114,7 @@ func (h *HTTP) newRequest(ctx context.Context, method, spath string, body io.Rea
 	return req, nil
 }
 
-func joinUrl(rawurl string, filepath string) string {
+func joinURL(rawurl string, filepath string) string {
 	u, err := url.Parse(rawurl)
 	if err != nil {
 		return rawurl
